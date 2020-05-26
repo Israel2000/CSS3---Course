@@ -7,7 +7,7 @@ basic css3
 - backgrounds
 - border
 - box model
-- font awsome
+- font awesome
 - google fonts
 - lists
 - tables
@@ -22,26 +22,179 @@ Advance css3
 - media queries
 - grid
 */
+/* margin, font-family */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+/*syntax */
+h1 {
+    text-align: center;
+    color: blue;
+}
+/* Text */
+.div-text2 p {
+    color:red;
+    background-color: aqua;
+    width: 50%;
+    height: 5rem;
+    /* direction: rtl;
+    unicode-bidi: bidi-override; */
+    font-weight: bold;
+    font-size: 1em; /* 16px = 1em*/
+}
+/* text: decoration */
+.div-text2 > h3 {
+    font-size: 50px;
+    /* text-decoration: overline;
+    text-decoration: line-through; */
+    text-decoration: underline;
+    text-transform: uppercase;
+    /* text-transform: lowercase; */
+        text-shadow: 2px 2px;
+
+}
+/* colors, backgrounds,border */
+p {
+    background: #333;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 189, 189);
+}
+
+/* background image */
+.bg-img {
+    background-image: url("/images/bgimage.jpeg");
+    min-height: 500px;
+
+}
+h2  {
+    color: rgb(98, 211, 255);
+    font-size: 100px;
+    text-align: center;
+}
+.bg-img > p {
+    font-size: 30px;
+    background-color: rgb(195, 232, 247);
+    border: none;
+    margin: 120px;
+    padding: 10px;
+    
+}
+/* Link */
+a {
+    color: pink;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3em;
+}
+
+/* list */
+ #list-a {
+     list-style-type: upper-roman;
+ }
+ #list-b {
+     list-style-type: lower-latin;
+ }
+ #list-c {
+     list-style-type: square;
+ }
+ /* Display:- inline, block */
+#list-c li {
+    display: inline;
+}
+
+/* Align */
+img {
+    float: right;
+    
+}
+.clearfix {
+    overflow: auto;
+    border: 20px solid black;
+
+}
+/* Combinators: 
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+ */
+ div small {
+     background-color: burlywood;
+ }
+
+/* Pseduo-class css */
+a:link {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: hotpink;
+}
+a:active {
+    color: blue;
+}
+/* hovering */
+.hovering {
+    display: none;
+    background-color: rgb(170, 170, 19);
+    padding: block;
+    
+}
+div:hover p {
+    display: block;
+}
+
+/* table css */
+table, th, td {
+    border: 1px solid black;
+}
+.developers {
+    border-collapse: collapse;
+}
 /*
-- syntax
-- selector
-- colors
-- backgrounds
-- border
-- box model
-- font awsome
-- google fonts
-- lists
-- tables
-- display
-- float
-- align
+- Attribute selectors
 
 Advance css3
-- pseduo-class
+- pseduo-class 
+- Combinators
 - gridents
 - flexbox
 - media queries
 - grid
-*/
+
+/* examples */
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+}
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+@media (max-width: 600px) {
+    #main-block {
+        width: 100%;
+        float: none;
+    }
+    #sidebar {
+        width: 100%;
+        float: none;
+    }
+}
