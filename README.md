@@ -1,4 +1,4 @@
-# CSS3---Course
+# CSS3-Course: for beginners
 Teaching CSS3 for Beginners
 - text
 - colors
