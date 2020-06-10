@@ -1,0 +1,35 @@
+div {
+ background-color: silver;
+  border: 2px dotted white;
+  color: rgb(19, 19, 19);  
+}
+header, main > article, nav, aside, footer {
+    width: 100%;
+    border: 2px solid;
+    height: 100px;
+    background-color: rgb(130, 130, 130);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* flexbox css */
+ main {
+    display: flex;
+}
+main > article {
+    order: 2; 
+    min-width: 12em;
+    flex: 1;
+}
+
+main > nav {
+    order: 1;
+    width: 200px;
+}
+main > aside {
+    order: 3;
+    width: 200px;
+}
