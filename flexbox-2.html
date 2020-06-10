@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="./styles/flexbox.css">
+
+    <title>flexbox example 2</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .box-1 {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .box-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-3 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    span {
+        border: 2px solid rgb(184, 184, 184);
+        width: 50%;
+        height: 100px;
+        margin: 10px;
+        font-size: 100px;
+        color: rebeccapurple;
+    }
+</style>
+
+<body>
+    <!-- flexbox digonal disign -->
+    <div>
+        <div class="box-1">
+            <span> 1</span>
+
+        </div>
+        <div class="box-2">
+            <span> 2</span>
+
+        </div>
+        <div class="box-3">
+            <span> 3</span>
+
+        </div>
+    </div>
+</body>
+
+</html>
